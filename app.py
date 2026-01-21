@@ -5,6 +5,10 @@ import subprocess
 import sys
 from datetime import datetime
 
+import os
+if not os.path.exists("/home/appuser/.cache/ms-playwright"):
+    os.system("playwright install chromium")
+
 st.set_page_config(page_title="Betting Smart Dashboard", layout="wide")
 
 st.markdown("""
