@@ -7,8 +7,9 @@ from datetime import datetime
 from playwright.sync_api import sync_playwright
 
 # --- CONFIGURATION ---
-TELEGRAM_BOT_TOKEN = "8499543199:AAFqGSKJ7PqhoBHV56crAAIwSPtpHN6Fi1w"
-TELEGRAM_CHAT_ID = "2046825005"
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_CHAT_ID")
+
 EXCEL_FILE = "matches_daily.xlsx"
 HISTORY_FILE = "picks_history.csv"
 
